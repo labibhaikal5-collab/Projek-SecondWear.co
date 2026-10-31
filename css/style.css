@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  padding-top: 72px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --warna-utama: #4a7c66;
+}
+
+.bg-utama {
+  background-color: var(--warna-utama);
+}
+
+.navbar[data-bs-theme="dark"] {
+  --bs-navbar-color: #fff;
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: #fff;
+}
+
+.card img {
+  height: 220px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
